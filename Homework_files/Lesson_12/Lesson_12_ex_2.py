@@ -37,6 +37,7 @@
 from functools import wraps
 from typing import Callable, Any
 
+
 def limit_calls(limit: int, message: str, default: Any) -> Callable:
 
     def decorator(func):
@@ -88,3 +89,4 @@ print(get_items("гаджеты"))
 print(get_items("деньги"))
 print(get_items("книги"))
 print(get_items("ключи"))
+print(get_items("документы"))
